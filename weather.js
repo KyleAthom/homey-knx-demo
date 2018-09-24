@@ -14,4 +14,5 @@ await fetch(fullPath)
 
 //Print the obtained weather condtions
 console.log('The weather condition in', city ,'is', condition, 'and the temperature is', temperature);
-say('The weather condition in', city ,'is', condition, 'and the temperature is', temperature);
+// let Homey tell the current weather conditions. It only accepts one arguement, hence the + to create one string.
+say('The weather condition in ' + city + ' is ' + condition + ' and the temperature is ' + temperature + ' degrees');
